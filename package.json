@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "bunx --bun next dev",
     "build": "bunx --bun next build",
-    "start": "bunx --bun next start",
+    "start": "bunx serve@latest out",
     "lint": "bunx --bun next lint"
   },
   "dependencies": {

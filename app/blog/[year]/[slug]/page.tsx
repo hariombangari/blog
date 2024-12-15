@@ -5,8 +5,14 @@ import { Badge } from '@/components/ui/badge';
 import { Clock, Share2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+interface BlogPost {
+  slug: string;
+  year: string;
+
+}
+
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts: BlogPost[] = getAllPosts();
   return posts.map((post) => ({
     year: post.year,
     slug: post.slug,

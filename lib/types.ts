@@ -13,3 +13,14 @@ export interface SocialLink {
   url: string;
   icon: string;
 }
+
+export interface Post {
+  code: string;
+  frontmatter: {
+    title: string;
+    date: string;
+    readingTime: string;
+    tags: string[];
+    slug: string;
+  };
+}

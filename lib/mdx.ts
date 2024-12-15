@@ -7,10 +7,11 @@ import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
+import { Post } from './types';
 
 const POSTS_PATH = path.join(process.cwd(), 'content/blog');
 
-export async function getPostBySlug(year: string, slug: string) {
+export async function getPostBySlug(year: string, slug: string): Promise<Post> {
   const postFilePath = path.join(POSTS_PATH, year, `${slug}.mdx`);
   const source = fs.readFileSync(postFilePath, 'utf8');
 
@@ -32,7 +33,9 @@ export async function getPostBySlug(year: string, slug: string) {
   return {
     code,
     frontmatter: {
-      ...data,
+      title: data.title,
+      date: data.date,
+      tags: data.tags || [],
       slug,
       readingTime: readingTime(content).text,
     },
@@ -51,10 +54,14 @@ export function getAllPosts() {
       .map(fileName => {
         const source = fs.readFileSync(path.join(postsPath, fileName), 'utf8');
         const slug = fileName.replace(/\.mdx?$/, '');
-        const { data } = matter(source);
+        const { data, content } = matter(source);
 
         return {
-          ...data,
+          title: data.title,
+          excerpt: data.excerpt || '',
+          date: data.date,
+          tags: data.tags || [],
+          content,
           slug,
           year,
           readingTime: readingTime(source).text,
