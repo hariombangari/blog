@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Nav } from '@/components/nav';
+import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'Hariom Bangari | Personal Blog',
@@ -26,6 +27,7 @@ export default function RootLayout({
           <div className="max-w-2xl mx-auto px-4">
             <Nav />
             <main>{children}</main>
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

@@ -35,20 +35,20 @@ export function Nav() {
   const NavItems = () => (
     <>
       <Link
-        href="/"
+        href="/blog"
         className={cn(
           'text-sm transition-colors hover:text-foreground/80',
-          pathname === '/' ? 'text-foreground' : 'text-foreground/60'
+          pathname === '/blog' ? 'text-foreground' : 'text-foreground/60'
         )}
         onClick={() => setOpen(false)}
       >
         Blog
       </Link>
       <Link
-        href="/about"
+        href="/"
         className={cn(
           'text-sm transition-colors hover:text-foreground/80',
-          pathname === '/about' ? 'text-foreground' : 'text-foreground/60'
+          pathname === '/' ? 'text-foreground' : 'text-foreground/60'
         )}
         onClick={() => setOpen(false)}
       >
