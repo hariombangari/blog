@@ -1,57 +1,28 @@
 # blog
 
-This is the blog that powers `hariombangari.dev`, built on
+This is the blog that powers `hariom.dev`, built on
 [next.js](https://nextjs.org/) and
-deployed to the cloud via [Vercel](https://vercel.com).
-
-## How to run
-
-First, install [Vercel CLI](https://vercel.com/download).
+deployed to the cloudflare pages.
 
 ### Development
 
 ```
-vc dev
+bun install
+bun dev
 ```
-
-### Deployment
-
-#### Staging
-
-```bash
-vc
-```
-
-This is the equivalent of submitting a PR with the [GitHub integration](https://vercel.com/github)
 
 #### Production
 
 ```bash
-vc --prod
+bun build
 ```
 
-This is the equivalent of `git push` to `master` (or merging a PR to master)
+This is connected to the cloudflare pages via github actions. Every push to the master branch will trigger the build and deploy the site.
 
-## Architecture
+## Involvement of AI
 
-### Pure components
-
-Every stateless pure component is found under `./components`.
-
-Every component that has to do with styling the post's markup
-is found under `./components/post/`
-
-These components make up the _style guide_ of the application.
+This is built completely using AI. I used [v0.dev](https://v0.dev) to generate the entire site. And then I used [Cursor](https://www.cursor.com/) to add the final touches. I am not a professional designer, so I used AI to generate the design. I have given few refrence blog website to the AI to generate the design.
 
 ### Blog posts
 
-Every blog post is a static page hosted under `pages/$year/`.
-
-This allows every post to load arbitrary modules, have custom layouts
-and take advantage of automatic code splitting and lazy loading.
-
-This means that the bloat of a single post doesn't "rub off on" the
-rest of the site.
-
-An index of all posts is maintained in JSON format as `./posts.json`
-for practical reasons.
+Every blog post is a markdown file hosted under `pages/$year/`.
