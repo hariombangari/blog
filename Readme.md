@@ -2,7 +2,7 @@
 
 This is the blog that powers `hariom.dev`, built on
 [next.js](https://nextjs.org/) and
-deployed to the cloudflare pages.
+deployed to the [cloudflare pages](https://pages.cloudflare.com/).
 
 ### Development
 
