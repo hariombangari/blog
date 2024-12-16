@@ -21,24 +21,24 @@ export default function Home() {
           on tech. Armed with curiosity and a self-taught approach, I leaped into
           the world of software development. What began as a web design gig soon
           evolved into a full-blown passion for <strong>frontend engineering</strong>—and
-          eventually, a knack for mastering both <strong>frontend and backend</strong> technologies. 💻✨
+          eventually, a knack for mastering both <strong>frontend and backend</strong> technologies. ✨
         </p>
         <p>
           At <i>Publicis Groupe</i>, I&apos;m proud to be part of the team
           behind <strong>CoreAI</strong>, an innovative platform fueling AI-driven
-          solutions across diverse industries. 🧠🤖
+          solutions across diverse industries.
         </p>
         <p>
           But hey, it&apos;s not all work and no play! Beyond the keyboard, I
           love hanging out with my family and friends, discovering hidden gems
-          around the world 🌍, and lending a hand to others on their learning
+          around the world, and lending a hand to others on their learning
           or project journeys.
         </p>
         <p>
-          Always up for an exciting challenge, collaboration, or a spark of
-          innovation? Let&apos;s connect! I&apos;m open to <strong>freelance gigs</strong>,
-          passion projects, and ideas that push boundaries. Let&apos;s build
-          something amazing together! 🚀
+          Always up for an exciting challenge, a chance to collaborate, or a
+          spark of innovation? Let&apos;s connect! I&apos;m open to teaming up
+          on passion projects and bold ideas that push boundaries. Together, we
+          can create something extraordinary! 🚀
         </p>
         <h2 className="text-2xl font-bold mt-8">
           Things where I have contributed
