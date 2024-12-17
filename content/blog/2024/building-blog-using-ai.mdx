@@ -1,27 +1,73 @@
 ---
-title: Building a Blog Website Without Coding
+title: Creating a Blog Website Without Coding - An AI Powered Journey
 date: '2024-12-15'
 tags: ['v0.dev', 'cursor', 'ai', 'cloudflare', 'nextjs', 'mdx']
-excerpt: How I Leveraged AI-Powered Platforms like v0.dev and Cursor to Create My Blog in No Time.
+excerpt: Creating this blog website was an experiment to see how far I could go without writing a single line of code.
 ---
 
-# Welcome to my blog!
+Creating this blog website was an experiment to see how far I could go without writing a single line of code. The results? A functional and elegant blog, powered entirely by AI.
 
-This is my first blog post written in MDX. MDX is a powerful format that lets you seamlessly write JSX in your markdown documents.
 
-## Features
+## My Journey to Blogging
 
-- **Syntax highlighting** for code blocks
-- Support for **React components**
-- **Frontmatter** for metadata
-- **Automatic** reading time calculation
+I've always wanted to start my own blog website instead of relying on platforms like Medium or WordPress. However, procrastination often got the better of me. As a seasoned software developer, I knew I could hand-code a blog website in about a week, ensuring a pixel-perfect design and responsive layout. But between work and family, finding the time was a challenge.
 
-```typescript
-function greet(name: string) {
-  return `Hello, ${name}!`;
-}
-```
+Over the past year, AI tools have become my indispensable co-workers, helping me with everything from coding and debugging to writing emails and even assisting with my son's school assignments. So, it only made sense to leverage these tools for building my blog website.
 
-## Why MDX?
+## Breaking Down the Process
 
-MDX allows you to use React components right alongside your markdown content. This makes it perfect for technical blog posts where you might want to include interactive demos or complex layouts.
+Every website can be broadly divided into three phases: **Design**, **Build**, and **Deploy**. Here's how I approached each phase using AI tools.
+
+### 1. Design
+
+I envisioned a simple, clean, and easy-to-read design for my blog. However, the thought of designing from scratch in tools like Figma and then converting it into code felt daunting. That's when I decided to leverage the power of AI.
+
+#### AI-Powered Design Tools
+
+I used [Vercel v0.dev](https://v0.dev/), an AI-powered code generation tool by Vercel, to create the design. It generates a complete Next.js app based on prompts. Here's the initial prompt I used:
+
+> Build a portfolio website for a software developer. It should have a home page describing experience and social media links, and a blog section. The website should be elegant and clean, using Next.js with Tailwind CSS and ShadCN components.
+
+The initial output wasn't perfect, but after refining my prompts and providing screenshots and links for reference, I achieved about 70% of my desired design. Despite using the free version of v0.dev, it delivered impressive results.
+
+#### Profile Picture
+
+I generated the profile picture using [Headshot Pro](https://www.headshotpro.com/), a paid AI tool. While free tools produced subpar results, this tool delivered a professional-looking image.
+
+### 2. Build
+
+After finalizing the design, I downloaded the generated code. Vercel v0.dev allows you to either deploy directly to their platform or download the code for further customization.
+
+#### Refinement
+
+I used [Cursor](https://www.cursor.com/), an AI-powered IDE, to refine the website. Cursor's ability to understand the entire codebase and make precise modifications saved me significant time. My workflow was straightforward: preview the site in the browser, note the changes I wanted, and ask Cursor to implement them.
+
+#### Experimenting with Bun
+
+I switched the JavaScript runtime from Node.js to [Bun](https://bun.sh/). Bun's performance, especially during package installation and Next.js startup, was noticeably faster. After testing it on both Windows and macOS, I observed significant improvements compared to Node.js.
+
+#### Tech Stack
+
+- **Framework:** Next.js (SSG)
+- **Libraries:** React, MDX, ShadCN, Tailwind CSS
+- **Runtime:** Bun
+- **Content Management:** Markdown files, converted to HTML at build time
+
+### 3. Deploy
+
+For deployment, I chose [Cloudflare Pages](https://pages.cloudflare.com/). It supports static site hosting with features like GitHub integration, free edge caching, TLS, DNS, security, and analytics—all at no cost. With 100K free requests per day, it's ideal for my blog's expected traffic.
+
+## Lessons Learned
+
+1. **Provide Context:** When using tools like v0.dev, include detailed requirements in your prompts—technology stack, layout, user flows, etc. This reduces the need for multiple iterations.
+
+2. **Choose Composer in Cursor:** Cursor's “Compose” feature outperformed its “Chat” feature for multi-file updates and creating new files.
+
+3. **Validate AI Outputs:** AI-generated code can sometimes be inaccurate. Always test your application thoroughly before deploying, even for hobby projects.
+
+4. **Experiment with Tools:** While tools like [Bolt](https://bolt.new/) can generate apps, v0.dev produced higher-quality Next.js code. Similarly, models like Sonet 3.5 excelled at coding tasks compared to GPT-4 and Llama.
+
+## Final Thoughts
+
+Building this blog website with AI tools demonstrated how powerful and transformative AI can be in streamlining development. Leveraging tools like v0.dev, Cursor, and Bun, I was able to create a polished, professional blog entirely without coding—an approach that proved both efficient and highly rewarding.
+

@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "bunx --bun next dev",
-    "build": "bunx --bun next build",
+    "dev": "bunx next dev",
+    "build": "bunx next build",
     "start": "bunx serve@latest out",
-    "lint": "bunx --bun next lint"
+    "lint": "bunx next lint"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
