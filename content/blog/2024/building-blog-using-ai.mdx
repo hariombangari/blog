@@ -1,6 +1,6 @@
 ---
 title: Creating a Blog Website Without Coding - An AI Powered Journey
-date: '2024-12-15'
+date: '2024-12-17'
 tags: ['v0.dev', 'cursor', 'ai', 'cloudflare', 'nextjs', 'mdx']
 excerpt: Creating this blog website was an experiment to see how far I could go without writing a single line of code.
 ---
@@ -18,7 +18,7 @@ Over the past year, AI tools have become my indispensable co-workers, helping me
 
 Every website can be broadly divided into three phases: **Design**, **Build**, and **Deploy**. Here's how I approached each phase using AI tools.
 
-### 1. Design
+### Design
 
 I envisioned a simple, clean, and easy-to-read design for my blog. However, the thought of designing from scratch in tools like Figma and then converting it into code felt daunting. That's when I decided to leverage the power of AI.
 
@@ -34,7 +34,7 @@ The initial output wasn't perfect, but after refining my prompts and providing s
 
 I generated the profile picture using [Headshot Pro](https://www.headshotpro.com/), a paid AI tool. While free tools produced subpar results, this tool delivered a professional-looking image.
 
-### 2. Build
+### Build
 
 After finalizing the design, I downloaded the generated code. Vercel v0.dev allows you to either deploy directly to their platform or download the code for further customization.
 
@@ -53,19 +53,19 @@ I switched the JavaScript runtime from Node.js to [Bun](https://bun.sh/). Bun's 
 - **Runtime:** Bun
 - **Content Management:** Markdown files, converted to HTML at build time
 
-### 3. Deploy
+### Deploy
 
 For deployment, I chose [Cloudflare Pages](https://pages.cloudflare.com/). It supports static site hosting with features like GitHub integration, free edge caching, TLS, DNS, security, and analytics—all at no cost. With 100K free requests per day, it's ideal for my blog's expected traffic.
 
 ## Lessons Learned
 
-1. **Provide Context:** When using tools like v0.dev, include detailed requirements in your prompts—technology stack, layout, user flows, etc. This reduces the need for multiple iterations.
+**Provide Context:** When using tools like v0.dev, include detailed requirements in your prompts—technology stack, layout, user flows, etc. This reduces the need for multiple iterations.
 
-2. **Choose Composer in Cursor:** Cursor's “Compose” feature outperformed its “Chat” feature for multi-file updates and creating new files.
+**Choose Composer in Cursor:** Cursor's “Compose” feature outperformed its “Chat” feature for multi-file updates and creating new files.
 
-3. **Validate AI Outputs:** AI-generated code can sometimes be inaccurate. Always test your application thoroughly before deploying, even for hobby projects.
+**Validate AI Outputs:** AI-generated code can sometimes be inaccurate. Always test your application thoroughly before deploying, even for hobby projects.
 
-4. **Experiment with Tools:** While tools like [Bolt](https://bolt.new/) can generate apps, v0.dev produced higher-quality Next.js code. Similarly, models like Sonet 3.5 excelled at coding tasks compared to GPT-4 and Llama.
+**Experiment with Tools:** While tools like [Bolt](https://bolt.new/) can generate apps, v0.dev produced higher-quality Next.js code. Similarly, models like Sonet 3.5 excelled at coding tasks compared to GPT-4 and Llama.
 
 ## Final Thoughts
 

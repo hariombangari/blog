@@ -4,10 +4,11 @@ import { GeistSans } from 'geist/font/sans';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Nav } from '@/components/nav';
 import { Footer } from '@/components/footer';
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'Hariom Bangari | Personal Blog',
-  description: 'A software engineer who loves to build products using latest technologies',
+  description: 'A software developer who loves to build products using latest technologies',
 };
 
 export default function RootLayout({
@@ -30,6 +31,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

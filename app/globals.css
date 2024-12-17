@@ -80,3 +80,62 @@
     @apply bg-background text-foreground antialiased;
   }
 }
+
+.prose pre {
+  background-color: #1a1b26 !important;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #c9d1d9;
+}
+
+.prose code {
+  background-color: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.dark .prose code {
+  background-color: #374151;
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.prose blockquote {
+  font-style: italic;
+  color: #6b7280;
+  border-left-width: 0.25rem;
+  border-left-color: #e5e7eb;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+}
+
+.dark .prose blockquote {
+  border-left-color: #374151;
+  color: #9ca3af;
+}
+
+/* Add styles for inline code in headings */
+.prose h1 code,
+.prose h2 code,
+.prose h3 code {
+  font-size: 0.875em;
+}
+
+/* Style for highlighted lines in code blocks */
+.highlighted {
+  background-color: #2d3748;
+  border-left: 2px solid #60a5fa;
+  margin-left: -1rem;
+  padding-left: calc(1rem - 2px);
+}

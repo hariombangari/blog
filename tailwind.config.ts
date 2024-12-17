@@ -6,6 +6,7 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './lib/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -83,8 +84,29 @@ const config: Config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            'h1,h2,h3,h4': {
+              fontWeight: '700',
+            },
+            h1: {
+              fontSize: '2.25rem',
+            },
+            h2: {
+              fontSize: '1.875rem',
+            },
+            h3: {
+              fontSize: '1.5rem',
+            },
+            h4: {
+              fontSize: '1.25rem',
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), require("@tailwindcss/typography")],
 };
 export default config;

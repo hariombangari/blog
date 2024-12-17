@@ -5,8 +5,8 @@ export default function Home() {
     <div className="space-y-8">
       <div className="prose dark:prose-invert max-w-none space-y-4">
         <div className="float-left mr-8 mb-4">
-          <div className="relative w-40 h-40 rounded-lg overflow-hidden">
-            <Image src="/images/profile.png" alt="Profile" fill />
+          <div className="relative w-32 h-32 lg:w-40 lg:h-40 rounded-lg overflow-hidden">
+            <Image src="/images/profile.png" className="!m-0" alt="Profile" fill />
           </div>
         </div>
         <h1 className="text-4xl font-bold mb-8">About</h1>
@@ -43,31 +43,31 @@ export default function Home() {
         <h2 className="text-2xl font-bold mt-8">
           Things where I have contributed
         </h2>
-        <ul>
-          <li className="mb-4">
+        <ul className="p-0 list-none">
+          <li className="mb-4 p-0">
             <strong>CoreAI</strong> - A platform build for Publicis Groupe that
             drives AI innovation across diverse client projects.
           </li>
-          <li className="mb-4">
+          <li className="mb-4 p-0">
             <strong>ASDA IAM</strong> - I was part of the team that built the
             Identity and Access Management system for ASDA, a leading UK
             retailer. We migrated their legacy system to a modern, Azure
             cloud-based solution.
           </li>
-          <li className="mb-4">
+          <li className="mb-4 p-0">
             <strong>Slike Video Player</strong> - A Video Player library built
             for Times Internet that is used in multiple of their products which
             has millions of users like toi.in, timesnow and may more regional
             news websites. This was building using native web technologies (HTML
             5 Audio/Video), Typescripts and Google IMA SDK.
           </li>
-          <li className="mb-4">
+          <li className="mb-4 p-0">
             <strong>Interiview Platform</strong> - I built a live interview
             platform for Times Internet that allows interviewers to conduct live
             interviews with their candidates. This platform was built using
             React, Node.js, and WebRTC.
           </li>
-          <li className="mb-4">
+          <li className="mb-4 p-0">
             <strong>Many more...</strong> - There are many more projects I have
             worked on and I am proud of those projects. Majorly I have used
             technologies like Python, Node.js, React, Typescript, Next.js, SQL,
